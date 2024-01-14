@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Walla</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="main-nav container flex">
+        <a href="#" class="company-logo"
+          ><img src="img/LOGO.png" alt="LOGO" />
+        </a>
+        <div class="nav-links">
+          <ul class="flex">
+            <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+            <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+            <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+            <li class="hover-link nav-item" id="technology" onclick="onNavItemClick('technology')">Technology</li>
+            <li class="hover-link nav-item" id="sharemarket" onclick="onNavItemClick('sharemarket')">Share Market</li>
+          </ul>
+        </div>
+        <div class="search-bar flex">
+          <input id="search-text" type="text" class="news-input" placeholder="e.g. science" />
+          <button id="search-button" class="search-button">Search</button>
+        </div>
+      </div>
+    </nav>
+
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            <!-- <div class="card">
+                <div class="card-header">
+                    <img src="img/400x200.png" alt="news-image" id="news-img">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">This is the title</h3>
+                    <h5 class="news-source" id="news-source">End Gadget 26/08/2023</h5>
+                    <p class="news-desc" id="news-desc">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio vel reprehenderit similique, odit suscipit veniam aliquam soluta doloremque iure ex! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, deserunt.
+                    </p>
+                </div>
+            </div> -->
+        </div -->
+    </main>
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="img/400x200.png" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the title</h3>
+                <h5 class="news-source" id="news-source">End Gadget 26/08/2023</h5>
+                <p class="news-desc" id="news-desc">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio vel reprehenderit similique, odit suscipit veniam aliquam soluta doloremque iure ex! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, deserunt.
+                </p>
+            </div>
+        </div>
+    </template>
+    
+
+    <script src="main.js"></script>
+  </body>
+</html>
